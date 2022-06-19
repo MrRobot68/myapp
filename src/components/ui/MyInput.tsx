@@ -27,7 +27,7 @@ const MyInput: FC<IInput> = props => {
         onFocus={focusHandler}
         onBlur={blurHandler}
       />
-      {isFocused && <Text style={styles.label}>test</Text>}
+      {isFocused && <Text style={styles.label}>{props.label}</Text>}
     </View>
   );
 };
@@ -35,9 +35,7 @@ const MyInput: FC<IInput> = props => {
 export default MyInput;
 
 const styles = StyleSheet.create({
-  root: {
-    marginBottom: 14,
-  },
+  root: {},
   input: {
     height: 50,
     minWidth: '100%',

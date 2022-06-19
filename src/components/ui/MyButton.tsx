@@ -28,7 +28,6 @@ export default MyButton;
 
 const styles = StyleSheet.create({
   button: {
-    width: '100%',
     borderRadius: 8,
     height: 50,
     alignItems: 'center',
